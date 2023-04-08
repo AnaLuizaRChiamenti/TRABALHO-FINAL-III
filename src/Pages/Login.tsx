@@ -14,7 +14,6 @@ import {
 import React from "react";
 
 import checkImage from "../Images/checkImage.png";
-import bgimage from "../Images/Design sem nome (2).png";
 
 const Login: React.FC = () => {
     const styleForm = {
@@ -24,11 +23,10 @@ const Login: React.FC = () => {
         alignItems: "center",
         justifyContent: "center",
         flexDirection: "column",
-        width: "40%",
-        height: "50%",
-        position: "absolute",
+        width: "100%",
+        height: "100%",
         bgcolor: "white",
-        borderRadius: "10px",
+        
     };
     return (
         <Grid container height="100vh" width="100vw" bgcolor='#c6d8ff'>
