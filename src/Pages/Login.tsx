@@ -14,10 +14,24 @@ import {
 import React from "react";
 
 import checkImage from "../Images/checkImage.png";
+import bgimage from "../Images/Design sem nome (2).png";
 
 const Login: React.FC = () => {
+    const styleForm = {
+        marginY: "8",
+        marginX: "4",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        flexDirection: "column",
+        width: "40%",
+        height: "50%",
+        position: "absolute",
+        bgcolor: "white",
+        borderRadius: "10px",
+    };
     return (
-        <Grid container height="100vh" width="100vw">
+        <Grid container height="100vh" width="100vw" bgcolor='#c6d8ff'>
             <Grid
                 item
                 md={7}
@@ -45,20 +59,11 @@ const Login: React.FC = () => {
                 alignItems="center"
                 justifyContent="center"
             >
-                <Box // colocar uma ondinha azul no fundo
-                    component="section"
-                    marginY={8}
-                    marginX={4}
-                    display="flex"
-                    alignItems="center"
-                    justifyContent="center"
-                    flexDirection="column"
-                    width="75%"
-                >
+                <Box sx={styleForm}>
                     <Avatar sx={{ bgcolor: "#4c80fc" }}>
                         <LockOpenIcon />
                     </Avatar>
-                    <Typography variant="h4" margin={2}>
+                    <Typography variant="h4" margin={2} color="black">
                         Faça seu login
                     </Typography>
 
@@ -100,13 +105,6 @@ const Login: React.FC = () => {
                             </Grid>
                         </Grid>
                     </Box>
-                    <Typography variant="body2" color="text.secondary" marginTop={5}>
-                        Copyright &copy;   
-                        <Link href="/" target="_blank">
-                            Your Website {" "}   
-                        </Link>
-                        2023.
-                    </Typography>
                 </Box>
             </Grid>
         </Grid>
